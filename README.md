@@ -1,76 +1,48 @@
-# Project Title:
+# DeafAbraxas: Forex Prediction Project
 
-## LolaRa: Anticipating Extreme Patterns in Euro/USD Data for Strategic Trading
-(Ra is the ancient Egyptian god of the sun and creation. He is considered one of the most important deities. A model named LolaRa might imply illumination, 
-enlightenment, or creation)
+DeafAbraxas is a forex prediction project that focuses on analyzing and predicting different forex pairs, such as JPY/USD and CHF/USD, across various time frame windows. The project aims to develop machine learning and deep learning models to capture patterns and trends in the forex market and generate accurate predictions.
 
-### Project Description:
-The Odysmerc project is dedicated to analyzing Euro/USD data to identify extreme patterns and anticipate uncommon price fluctuations. By leveraging data analysis and strategic trading techniques, the project aims to develop a methodology for earning money through informed trading decisions.
+## Project Overview
 
-### Features:
+The main objectives of the DeafAbraxas project are:
+- Collect and preprocess historical forex data for different currency pairs
+- Engineer relevant features from the raw data to capture market dynamics
+- Develop and train machine learning and deep learning models for forex prediction
+- Evaluate and optimize the models' performance using appropriate metrics
+- Deploy the trained models for real-time prediction and monitoring
 
-Data analysis to identify extreme patterns and unusual price movements
-Strategy development for trading based on anticipated market conditions
-Testing and validation of trading strategies to optimize earning potential
+## Forex Pairs and Time Frame Windows
 
+The project will focus on the following forex pairs:
+- JPY/USD (Japanese Yen / US Dollar)
+- CHF/USD (Swiss Franc / US Dollar)
+- [Add more forex pairs as needed]
 
-### Getting Started:
-- Clone the repository to your local machine
-- Install necessary dependencies using requirements.txt
-- Explore the dataset provided in the project
-- Run the analysis scripts to identify extreme patterns
-- Develop and test trading strategies based on the findings
+The analysis and predictions will be performed across different time frame windows, such as:
+- 30-minute
+- 1-hour
+- 4-hour
+- Daily
 
-### Data Sources:
+By considering multiple time frame windows, the project aims to capture both short-term and long-term trends and patterns in the forex market.
 
-- Euro/USD historical data 
+## Repository Structure
 
-### Methodology:
-- Outline the approach taken to identify extreme patterns and develop trading strategies
+The repository is structured as follows:
+- `data/`: Contains the historical forex data and preprocessed datasets
+- `notebooks/`: Jupyter notebooks for data exploration, analysis, and model development
+- `src/`: Python scripts for data preprocessing, feature engineering, and model training
+- `models/`: Trained machine learning and deep learning models
+- `docs/`: Documentation and project-related resources
 
-# ########################################### To env - Methodology ################################################################
-- Make sure your environment.yml file looks something like this:
+## Getting Started
 
-name: Lolara
-channels:
-  - defaults
-  - conda-forge
-- python=3.10.12  # Specify the Python version you want to use
-  # List your required packages here
-  - numpy
-  - pandas
-  - flask
-  - requests
-  - scikit-learn=1.2.2
-  - flask=2.2.5
-  - requests=2.26.0
-  - matplotlib
-  - seaborn
-  - lightgbm=4.1.0
-  - pytz
-  - pip
-  - pip:
-    - ta
-    - keras==2.15.0
-    - tensorflow==2.15.0  
-    - xgboost
-    - MetaTrader5
-
-
-## Create the Environment:
-- conda env create --file environment.yml
-
-## Activate and Verify:
-1. conda activate Odysmerc 
-OR
-2. source activate Odysmerc
-
-- python -c "import tensorflow as tf; print(tf.__version__)"
-- python -c "import keras; print(keras.__version__)"
-
-
-
-
+To get started with the DeafAbraxas project, follow these steps:
+1. Clone the repository: `git clone https://github.com/dfsosa83/DeafAbraxas.git`
+2. Create and activate the virtual environment: `conda env create -f environment.yml` and `conda activate deafabrax`
+3. Explore the Jupyter notebooks in the `notebooks/` directory to understand the data and models
+4. Run the Python scripts in the `src/` directory to preprocess data, engineer features, and train models
+5. Evaluate and optimize the trained models using the provided evaluation scripts
 
 - Update the Conda Environment:
 
@@ -82,31 +54,57 @@ Open your terminal and navigate to the directory containing your environment.yml
 - conda env remove --name lolara
 - conda env list
 
+## Contributing
 
-## Activate Your Environment:
+Contributions to the DeafAbraxas project are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-conda activate Odysmerc
+## License
 
-## Some Explanations in yml file:
+This project is licensed under the [MIT License](LICENSE).
 
-The channels section in a Conda environment.yml file specifies the repositories (also known as channels) from which Conda should fetch the packages you need. Conda channels are sources where packages are stored and managed.
+# upload to git repo: https://github.com/dfsosa83/DeafAbraxas.git
 
-### Why Use Channels?
+GitHub repository:
 
-- Default Channel: By default, Conda packages are fetched from the defaults channel, which is maintained by Anaconda, Inc.
+Open your terminal or command prompt.
 
-- Community Contributions: Some packages are not available in the defaults channel but are available in other channels like conda-forge, which is a community-driven collection of packages.
+Navigate to the directory where your project files are located using the cd command. For example:
 
-- Specific Needs: Different channels can have different versions of packages or packages built with different dependencies (e.g., using different compilers).
+cd C:\Users\david\OneDrive\Documents\DeafAbraxas
+Initialize a new Git repository in your project directory (if you haven't already done so):
 
-Common Channels
+- git init
+Stage all the changes in your project directory:
 
-- defaults: The default channel provided by Anaconda, Inc.
+- git add .
+This command adds all the modified and new files to the staging area.
 
-- conda-forge: A community-driven channel that has a vast collection of packages, often with more current versions than the defaults channel.
+Commit the changes with a meaningful commit message:
 
-- bioconda: A channel specifically for bioinformatics software.
+- git commit -m "Your commit message"
+Replace "Your commit message" with a brief description of the changes you made.
 
-- anaconda: This is for Anaconda's own packages, which might be slightly different from defaults.
+Add the remote repository URL (in this case, your GitHub repository):
 
+- git remote add origin https://github.com/dfsosa83/DeafAbraxas.git
+This command adds the GitHub repository as a remote named "origin".
 
+Push the changes to the GitHub repository:
+
+- git push -u origin master
+This command pushes the committed changes to the "master" branch of your GitHub repository. If prompted, enter your GitHub username and password.
+
+Note: If you encounter an error saying that the remote repository is not empty, you can force push your changes using:
+
+- git push -u origin master --force
+However, be cautious when using the --force option as it overwrites the remote repository with your local changes.
+
+After the push is successful, you can visit your GitHub repository page (https://github.com/dfsosa83/DeafAbraxas) to verify that your changes have been uploaded.
+
+That's it! Your work should now be saved in your GitHub repository.
+
+A few additional tips:
+
+- It's a good practice to commit your changes frequently and push them to the remote repository regularly to keep your work backed up and accessible from anywhere.
+- If you make further changes to your files, repeat steps 4-7 to stage, commit, and push the new changes.
+- If you want to collaborate with others or work on your project from multiple machines, you can clone the repository using git clone - -https://github.com/dfsosa83/DeafAbraxas.git on the other machine and follow the same steps to push your changes.
